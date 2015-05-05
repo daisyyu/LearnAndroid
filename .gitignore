@@ -38,4 +38,7 @@
 # eclipse metadata
 .metadata/*
 */.classpath
-*/bin/*
+*/bin
+*/gen
+local.properties
+.project
