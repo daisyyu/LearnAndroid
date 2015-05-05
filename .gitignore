@@ -38,3 +38,4 @@
 # eclipse metadata
 .metadata/*
 */.classpath
+*/bin/*
