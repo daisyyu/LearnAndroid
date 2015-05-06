@@ -1,0 +1,58 @@
+Android Life Cycle and safeInstanceState
+
+https://www.youtube.com/watch?v=B3G6kUXvfuY&list=PLonJJ3BVjZW6hYgvtkaWvwAVvOFB7fkLa&index=22
+
+
+There are 5 states that an activity goes through 
+
+As an activity comes to the screen, it goes through 3 states. Each states is associated with an event, and an event is associated with a method where you can add code. 
+onCreate() is called by the framework. And then onStart() is called and then onResume(). When onResume() is called, the activity is visible and interactive.
+
+
+
+Touching the back button will destroy the application, so that on next start, it will be a fresh start and we have to go through all 3 event of (onCreate, onStart, onResume) to start the app
+Touching the home button, however, doesn’t destroy the application, it is paused.So that next time when we start the app, only (onStart and onResume) is called.
+
+========================================================================================================
+
+
+onStart
+Onrestoreinstance state
+Onresume
+
+
+onPause
+onsaveinstancestate
+onstop
+======================================================================
+
+
+
+[start app]
+first time starting the app, onresroreinstance is not called since oncreat is not called, bundle is null
+oncreate
+onstart
+# First time increate, onrestoreinstancestate is not called because bundle is not in memery yet
+onresume
+
+[press home]
+onpause
+onsaveinstancestate (output)
+    onstop
+
+    [bring back app]
+    onrestart
+    onstart
+# onrestoreinstancestate(output), since this is an on restart, not called, call activity data is not destroyed, no need to retrieve from bundle
+    onresume
+
+    [rotate screen, activity destroyed and recreated]
+    onpause
+    onsaveinstancestate (output)
+    onstop
+    ondestroy
+
+    oncreate
+    onstart
+    onrestoreinstancestate(output)
+    onresume

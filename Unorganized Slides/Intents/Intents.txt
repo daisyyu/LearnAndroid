@@ -1,0 +1,30 @@
+Intents
+
+Action:
+Define what you want to do [Place a phone call]
+Data:
+What type of data do you want to work with [URI,images]
+Extras:
+What additional info you need to provide [key/value pairs, Phone number of the person to call]
+Categories
+Create groups of components to handle the intent, give additional info along with the ACTIOn
+[Place activity A in the launcher]
+
+
+What to write inside an intent filter?
+There is a matching that happens on the sending app and receiving app
+
+“Write one or more category to indicate what grouping your component support”
+1 or more <action> to indicate what actions can be handled by your component
+<data> to indicate what data can be handled by your component
+
+
+Broadcast receivers are people who listens to events {system notifications, like battery goes low, air plane mode on, but it also can listen to notifications we created, like Facebook timeline updated}
+
+Intent resolution: 
+package manager will compare the intent info with all activities and services.
+For broadest receivers, when a intent is submitted, packageManager will send this to all broadcast receivers for matching
+
+Who do your intent call:
+{activites, servies}, braodcast receiver
+

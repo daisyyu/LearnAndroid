@@ -1,0 +1,4 @@
+About “context”
+Tips: Whenever you need to manipulate Views then go for Activity-Context, elseApplication-Context would be enough.
+someClass.this, getBaseContext and getContext() are activity contexes while getApplicationContext() and getApplication() are application cortexes
+

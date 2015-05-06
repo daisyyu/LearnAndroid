@@ -1,0 +1,6 @@
+
+If no further modification is done, when orientation happens, current activity is recreated
+To prevent, change config in the manifest file
+To override the behavior on orientation change, override onConfigurationChanged method
+
+

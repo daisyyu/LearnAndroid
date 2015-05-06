@@ -1,0 +1,10 @@
+Why Adapters?
+For different screen sizes and devices, we want to display different numbers of entries to user.
+
+How?
+We are taking data frm Data Source to Adapter. Adapter manages the data, how many we should take, what we should take, and hand the data to AdapterView that determines how data should be presented.
+
+Types of Adapters
+ArrayAdapter: takes data from an Array
+SimpleCursorAdapter: takes data from DB ( Cursor )
+BaseAdapter: Customized adapter to define how data should be parsed
