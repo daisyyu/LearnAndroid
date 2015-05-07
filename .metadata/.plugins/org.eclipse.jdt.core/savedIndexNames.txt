@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+/Users/fuxinyu/Documents/workspace/DaisyLearn/.metadata/.plugins/org.eclipse.jdt.core
-2366124796.index
-2435120557.index
