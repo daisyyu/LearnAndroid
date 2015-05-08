@@ -1,0 +1,30 @@
+
+
+
+Default implementation will work for every widget which ids are defined. For example, If you have one EditText and if you will provide its id then system will save its value when Activity will be killed due to orientation and same and it will restore the EditText value when activity will be re-created.
+
+Edit
+
+If you have one base layout and if you are dynamically adding some views in the view hierarchy then you will have to handle the save state and restore state your self. also when your activity will be re-created then onCreate() method of the activity will be called so in this method first set all the addition views which you are creating and adding dynamically and then you can check the extra parameters with the intent which you are getting in the onCreate() method. This extra parameters are exactly same as you have adding extra parameters in the onSaveInstanceState method.
+
+So implement like below.
+
+int x = 10;
+@Override
+protected void onSaveInstanceState(Bundle outState) {
+    super.onSaveInstanceState(outState);
+    outState.putInt("x", x);
+}
+
+And in onCreate method you can get this x parameters like below
+
+@Override
+public void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.xxx);
+
+    if(savedInstanceState.containsKey("x")) {
+        x = savedInstanceState.getInt("x");
+    }
+}
+
