@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Loaded Status..."
+        android:textSize="20dp" />
+
+   <Button
+        android:id="@+id/internalCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="internalCache" 
+        android:onClick="internalCacheRetrieve"/>
+
+    <Button
+        android:id="@+id/externalCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="externalCache" 
+        android:onClick="externalCacheRetrieve"/>
+
+    <Button
+        android:id="@+id/externalPrivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="externalPrivate" 
+        android:onClick="externalPrivateRetrieve"/>
+
+    <Button
+        android:id="@+id/externalPublic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="externalPublic"
+        android:onClick="externalPublicRetrieve" />
+
+    <Button
+        android:id="@+id/Previous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:text="Previous"
+        android:onClick="goToPrevious" />
+
+</LinearLayout>
