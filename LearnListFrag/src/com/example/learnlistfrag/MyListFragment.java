@@ -24,7 +24,6 @@ public class MyListFragment extends ListFragment implements
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		Log.d(TAG, "onActivityCreated is Called");
 		super.onActivityCreated(savedInstanceState);
 		ArrayAdapter adapter = ArrayAdapter.createFromResource(getActivity(),

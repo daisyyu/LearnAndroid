@@ -67,3 +67,5 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+.recommenders/
