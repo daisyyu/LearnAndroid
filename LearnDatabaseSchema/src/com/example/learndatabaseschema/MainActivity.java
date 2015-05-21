@@ -5,6 +5,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+// https://www.youtube.com/watch?v=0BUljVIgnoE&list=PLonJJ3BVjZW5JdoFT0Rlt3ry5Mjp7s8cT&index=12
+// https://www.youtube.com/watch?v=tsNgtAdlof8&list=PLonJJ3BVjZW5JdoFT0Rlt3ry5Mjp7s8cT&index=13
+// https://www.youtube.com/watch?v=ge7m4nWmggs&list=PLonJJ3BVjZW5JdoFT0Rlt3ry5Mjp7s8cT&index=14
 
 public class MainActivity extends Activity {
 	DaisyHelper daisyHelper;
